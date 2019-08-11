@@ -150,7 +150,14 @@
      * Login
      */
     function login() {
-        // TODO: complete the login function
+        var username = document.getElementById("username").value;
+
+        if(username == ""){
+            alert("Please enter a valid username.")
+            console.log("No valid username");
+        } else {
+            window.location.href = "index?username="+username;
+        }
     }
 
     /**
